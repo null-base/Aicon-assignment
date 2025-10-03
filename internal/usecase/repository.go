@@ -23,6 +23,6 @@ type ItemRepository interface {
 	// Delete deletes an item by ID
 	Delete(ctx context.Context, id int64) error
 
-	// GetSummaryByCategory returns item counts grouped by category (bonus feature)
+	// GetSummaryByCategory returns item counts grouped by category
 	GetSummaryByCategory(ctx context.Context) (map[string]int, error)
 }
